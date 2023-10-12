@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+nav {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    nav{
+        display: block;
+        width: 80%;
+        justify-self: center;
+        z-index: 11;
+        padding: 1rem 0;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 2vh;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0;
+
+            li {
+                padding: 0.5rem 2vh;
+                &:has(> a.active){
+                        font-weight: bolder;
+                        border-bottom: 1px solid $dark-text;
+
+                    }
+                a {
+                   
+                    color: $dark-text ;
+                    text-decoration: none;
+                }
+            }
+
+            .logo {
+                margin-left: auto;
+                svg{
+
+                    height: 1.5rem;
+                }
+            }
+        }
+    }
+}

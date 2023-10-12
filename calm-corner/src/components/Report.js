@@ -1,5 +1,5 @@
 import React from "react";
-import "./assets/styles/Report.css";
+import "../assets/styles/Report.css";
 const Report = (props) => {
   return (
     <div className="report_container">

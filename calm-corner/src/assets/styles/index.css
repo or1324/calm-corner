@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: 'Regular', 'Bold', "Medium", "Thin", "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+@font-face {
+  font-family: 'Regular';
+  src: url('../fonts/RagSans_Woff2/RagSans-1.4-Regular.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('../fonts/RagSans_Woff2/RagSans-1.4-Bold.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'Medium';
+  src: url('../fonts/RagSans_Woff2/RagSans-1.4-Medium.woff2') format("woff2");
+}
+
+@font-face {
+  font-family: 'Thin';
+  src: url('../fonts/RagSans_Woff2/RagSans-1.4-Thin.woff2') format("woff2");
+}

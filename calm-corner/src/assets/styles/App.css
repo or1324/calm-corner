@@ -13,6 +13,12 @@
   }
 }
 
+/* add font family that is in the assets/fonts folder for all the website*/
+@font-face {
+  font-family: 'Regular';
+  src: url('../fonts/RagSans_Woff2/RagSans-1.4-Regular.woff2') format("woff2");
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

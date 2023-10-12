@@ -1,5 +1,6 @@
 # calm-corner
 אתר הרגעה לאנשים שתקועים במקלטים ולחרדתיים
+
 #Important notes
 1. Please do not push into master, wait for CR/approval by Barak, or anyone else that was permitted to review code.
 2. Don't start a task without approval of Or.

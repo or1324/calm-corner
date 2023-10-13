@@ -1,27 +1,23 @@
-import logo from './logo.svg';
-import './assets/styles/App.css';
-import Footer from './react-components/Footer';
-
+import logo from "./logo.svg";
+import "./assets/styles/App.css";
+import Footer from "./react-components/Footer";
+import Form from "./react-components/Form.js";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Footer></Footer>
+      <Form
+        title="הוספת דיווח"
+        showDropdown={true}
+        detailsPlaceHolder="פרטי הדיווח"
+        buttonTitle="הוסיפו דיווח"
+        onSubmit={handleSubmit}
+      />
     </div>
   );
+}
+function handleSubmit(data) {
+  // submission handling logic here
+  console.log("Form submitted with data:", data);
 }
 
 export default App;

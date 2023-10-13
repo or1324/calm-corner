@@ -28,8 +28,12 @@
     margin-right: 20px;
   }
 
-  a {
+  .footer-link {
     color: white
+  }
+
+  .footer-link:visited{
+    color:white;
   }
   
   .footer-lower-text {

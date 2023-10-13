@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  direction: rtl;
 }
 
 .App-logo {
@@ -33,6 +34,12 @@
 .App-link {
   color: #61dafb;
 }
+
+.layout {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+ }
 
 @keyframes App-logo-spin {
   from {

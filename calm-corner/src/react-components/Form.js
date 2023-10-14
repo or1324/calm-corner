@@ -1220,7 +1220,7 @@ const citiesList = [
   "תקומה",
   "תקוע",
   "תרום",
-]; // Replace with your list of cities
+];
 
 function Form(props) {
   const [name, setName] = useState("");

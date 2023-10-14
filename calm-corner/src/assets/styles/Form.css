@@ -1,17 +1,14 @@
 /*form css file*/
 @import "index.css";
 .form-container {
-  width: 286px;
-  height: 328px;
-  /*(display: flex;)*/
-  margin: 23px;
-  background-color: #fdfdfd;
+  background-color: none;
+  display: inline-block;
 }
 .submit-botton {
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
   background-color: #416df3;
   font-family: "regular";
-  font-size: large;
+  font-size: 20px;
   width: 20%;
   position: relative;
   border-radius: 8px;
@@ -24,21 +21,23 @@
 .input {
   font-family: "regular";
   background-color: #fdfdfd;
-  font-size: large;
+  font-size: 15px;
   width: 286px;
-  height: 44px;
-  padding: 5px;
-  margin: 5px;
   position: relative; /* Required for placeholder positioning */
-  border-radius: 8px;
+  border-radius: 14px;
   border-width: 0.5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: #314580;
 }
 #details-input {
   width: 286px;
   height: 171px;
   position: relative;
-  background-color: #fdfdfd;
 }
 .input::placeholder {
   position: relative;
@@ -50,7 +49,7 @@
 
 div.form-header {
   font-family: "Bold";
-  background-color: #fdfdfd;
+  background-color: none;
   position: relative;
   text-align: right;
   size: 200px;
@@ -61,18 +60,20 @@ div.form-header {
   background-color: #fdfdfd;
   font-family: "regular";
   color: #314580;
-  font-size: large;
-  width: 298px;
-  height: 54px;
-  padding: 5px;
-  margin: 5px;
-  background-color: transparent;
+  font-size: 15px;
+  width: 286px;
+  padding-top: 16px;
+  box-sizing:content-box;
+  padding-bottom: 16px;
   background-image: url("data:image/svg+xml;utf8,<svg fill='%23000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   position: relative;
-  border-radius: 8px;
+  border-radius: 14px;
   border-color: #314580;
   border-width: 0.5px;
   background-position: left center !important;
   background-repeat: no-repeat !important;
-  padding-right: 6px;
+  padding-right: 16px;
+}
+#form-title {
+  font-size: 20px;
 }

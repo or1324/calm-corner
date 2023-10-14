@@ -1247,7 +1247,7 @@ function Form(props) {
     <div className="form-container">
       <div className="form-group" dir="rtl">
         <div className="form-header">
-          <h2>{props.title}</h2>
+          <span id="form-title">{props.title}</span>
         </div>
         <form dir="rtl" onSubmit={handleSubmit}>
           <div className="form-group">

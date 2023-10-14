@@ -14,18 +14,21 @@ $dark-text:#0B0F1C;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            padding: 1rem;
+            margin-right: 23px;
         }
 
         height: min-content;
-        padding: 1rem 0;
         margin: auto;
-
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #F9F3F0;
+        
         ul {
             list-style: none;
             height: 100vh;
             width: 0;
-            transition: all 2s;
+            //transition: all 2s;
             text-wrap: nowrap;
             padding-inline: 5vh;
 
@@ -35,7 +38,7 @@ $dark-text:#0B0F1C;
                 border-bottom: 1px solid $dark-text;
                 padding: 1rem;
                 opacity: 0;
-                transition: all 1.5s;
+                //transition: all 1.5s;
 
 
             }
@@ -49,7 +52,7 @@ $dark-text:#0B0F1C;
 
                 li {
                     opacity: 1;
-                    transition: all 1.5s;
+                    //transition: all 1.5s;
                 }
             }
         }
@@ -64,17 +67,20 @@ $dark-text:#0B0F1C;
     nav {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        width: 100%;
         align-items: center;
-        width: 80%;
-        justify-self: center;
+        justify-content: space-between;
         z-index: 11;
-        padding: 1rem 0;
-        height: max-content;
-        margin: auto;
+        height: 50px;
+        background-color: #F9F3F0;
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
 
         .for-mobile {
-            margin-left: auto;
+            display: inline-block;
+            margin-right: 23px;
         }
 
         button {
@@ -84,7 +90,7 @@ $dark-text:#0B0F1C;
         ul {
             width: auto;
             opacity: 1;
-            display: flex;
+            display: inline-flex;
             flex-direction: row;
             gap: 2vh;
             align-items: center;
@@ -104,15 +110,6 @@ $dark-text:#0B0F1C;
             }
 
         }
-    }
-}
-
-.logo {
-    margin-left: auto;
-
-    svg {
-
-        height: 1.5rem;
     }
 }
 

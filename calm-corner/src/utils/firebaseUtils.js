@@ -29,11 +29,10 @@ function createStory(wirter, storyParagraph) {
 
 
 //add story
-async function addStory(wirter, storyText) {
+export async function addStory(wirter, storyText) {
     const storyObject = createStory(wirter, storyText);
     try {
         await addDoc(storiesCollection, storyObject);
-        console.log("Story added successfully!");
     } catch (error) {
         console.error("Error adding story:", error);
     }
@@ -41,19 +40,21 @@ async function addStory(wirter, storyText) {
 
 
 //get back all the stories from the firestore
-async function readStories() {
+export function readStories() {
     var allStoriesList = [];
-    const q = query(collection(db, "stories"));
-    const querySnapshot = await getDocs(q);
-    querySnapshot.forEach((doc) => {
-        allStoriesList.push(doc.data())
+    getDocs(query(collection(db, "stories"))).then((snapshot) => {
+        snapshot.forEach((doc) => {
+            allStoriesList.push(doc.data())
+        });
+    }).catch((error) => {
+        console.error("Error reading stories:", error);
     });
     return allStoriesList;
 }
 
 //-----------------------------------------------------
 
-function createReport(wirter, reportContent,cityName) {
+function createReport(wirter, reportContent, cityName) {
     return {
         writerName: wirter,
         reportContent: reportContent,
@@ -63,29 +64,25 @@ function createReport(wirter, reportContent,cityName) {
     };
 }
 //add report
-async function addReport(wirter, reportContent,cityName) {
+export async function addReport(wirter, reportContent, cityName) {
     const reporObject = createReport(wirter, reportContent,cityName);
     try {
         await addDoc(reportsCollection, reporObject);
-        console.log("Report added successfully!");
     } catch (error) {
         console.error("Error adding report:", error);
     }
 }
 
 //get back all the reports from the firestore
-async function readReports() {
+export function readReports() {
     var allReportsList = [];
-    const q = query(collection(db, "reports"));
-    try {
-        const querySnapshot = await getDocs(q);
-        querySnapshot.forEach((doc) => {
+    getDocs(collection(db, "reports")).then((snapshot) => {
+        snapshot.forEach((doc) => {
             allReportsList.push(doc.data())
         });
-    }
-    catch (error) {
+    }).catch((error) => {
         console.error("Error reading reports:", error);
-    }
+    });
     
     return allReportsList;
 }

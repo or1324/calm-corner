@@ -14,19 +14,19 @@ function NavigationBar() {
     }
   }
   return (
-    <nav>
-      <div className='for-mobile'>
-        <div className='logo'><Link to='/'><CalmCornerLogo /></Link></div>
-        <button onClick={toggleNavMobile}><MenuRoundedIcon /></button>
-      </div>
-      <ul className='topnav' id='navigation'>
-        <li><NavLink to='/מוקדי-תמיכה' className="navigation-link">מוקדי תמיכה</NavLink></li>
-        <li><NavLink to='/שיטות-הרגעה' className="navigation-link">שיטות הרגעה</NavLink></li>
-        <li><NavLink to='/סיפורים-אישיים' className="navigation-link">סיפורים אישיים</NavLink></li>
-        <li><NavLink to='/דיווחים-מהשטח' className="navigation-link">דיווחים מהשטח</NavLink></li>
-        <li><NavLink to='/הגנה-עצמית' className="navigation-link">הגנה עצמית</NavLink></li>
-      </ul>
-    </nav>
+      <nav>
+        <div className='for-mobile'>
+          <div className='logo'><Link to='/'><CalmCornerLogo /></Link></div>
+          <button onClick={toggleNavMobile}><MenuRoundedIcon /></button>
+        </div>
+        <ul className='topnav' id='navigation'>
+          <li><NavLink to='/מוקדי-תמיכה' className="navigation-link">מוקדי תמיכה</NavLink></li>
+          <li><NavLink to='/שיטות-הרגעה' className="navigation-link">שיטות הרגעה</NavLink></li>
+          <li><NavLink to='/סיפורים-אישיים' className="navigation-link">סיפורים אישיים</NavLink></li>
+          <li><NavLink to='/דיווחים-מהשטח' className="navigation-link">דיווחים מהשטח</NavLink></li>
+          <li><NavLink to='/עזרה-ראשונה' className="navigation-link">עזרה ראשונה</NavLink></li>
+        </ul>
+      </nav>
   )
 }
 

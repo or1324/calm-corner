@@ -3,8 +3,9 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family:Extra-Bold;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 #explaination {
     font-size: 15px;
@@ -14,4 +15,10 @@
 }
 #content {
     margin: 23px;
+}
+@media only screen and (max-width: 650px) {
+#title, #explaination {
+    display: block;
+    text-align: center;
+}
 }

@@ -1,9 +1,9 @@
-* {
-  background-color: #f9f3f0;
-}
+
 
 .App {
   direction: rtl;
+  background-color: #f9f3f0;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -21,6 +21,14 @@
 @font-face {
   font-family: "Regular";
   src: url("../fonts/RagSans_Woff2/RagSans-1.4-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Bold";
+  src: url("../fonts/RagSans_Woff2/RagSans-1.4-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Extra-Bold";
+  src: url("../fonts/RagSans_Woff2/RagSans-1.4-ExtraBold.woff2") format("woff2");
 }
 
 .App-header {

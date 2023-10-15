@@ -1,0 +1,79 @@
+/*form css file*/
+@import "index.css";
+.form-container {
+  background-color: none;
+  display: inline-block;
+}
+.submit-botton {
+  color: hsl(0, 0%, 100%);
+  background-color: #416df3;
+  font-family: "regular";
+  font-size: 20px;
+  width: 20%;
+  position: relative;
+  border-radius: 8px;
+  border-width: 0px;
+  width: 121px;
+  height: 44px;
+  margin-left: 55%;
+}
+
+.input {
+  font-family: "regular";
+  background-color: #fdfdfd;
+  font-size: 15px;
+  width: 286px;
+  position: relative; /* Required for placeholder positioning */
+  border-radius: 14px;
+  border-width: 0.5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #314580;
+}
+#details-input {
+  width: 286px;
+  height: 171px;
+  position: relative;
+}
+.input::placeholder {
+  position: relative;
+  text-align: right;
+  color: #314580;
+  top: 2px;
+  font-family: "regular";
+}
+
+div.form-header {
+  font-family: "Bold";
+  background-color: none;
+  position: relative;
+  text-align: right;
+  size: 200px;
+}
+.select-input {
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fdfdfd;
+  font-family: "regular";
+  color: #314580;
+  font-size: 15px;
+  width: 286px;
+  padding-top: 16px;
+  box-sizing:content-box;
+  padding-bottom: 16px;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  position: relative;
+  border-radius: 14px;
+  border-color: #314580;
+  border-width: 0.5px;
+  background-position: left center !important;
+  background-repeat: no-repeat !important;
+  padding-right: 16px;
+}
+#form-title {
+  font-size: 20px;
+}

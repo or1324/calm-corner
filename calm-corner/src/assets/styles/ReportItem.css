@@ -1,0 +1,27 @@
+.report_container{
+  width: 400px;
+  height: 140px;
+  border: 2px solid black;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 20px;
+  border-radius: 10px;
+  text-align: right;
+  align-items: start;
+  position: relative;
+  margin: 10px;
+}
+.report_footer{
+  align-items: start;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 10%;
+}
+.reporter_name {
+  font-weight: 700;
+}
+.report_time {
+  direction: ltr;
+}

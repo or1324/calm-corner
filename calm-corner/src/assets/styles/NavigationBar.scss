@@ -1,0 +1,123 @@
+$dark-text:#0B0F1C;
+@mixin transparentButton(){
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+@media only screen and (max-width: 650px) {
+    nav {
+        .for-mobile {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-right: 23px;
+        }
+
+        height: min-content;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #F9F3F0;
+        
+        ul {
+            list-style: none;
+            height: 100vh;
+            width: 0;
+            //transition: all 2s;
+            text-wrap: nowrap;
+            padding-inline: 5vh;
+
+            li {
+                width: 100%;
+                display: block;
+                border-bottom: 1px solid $dark-text;
+                padding: 1rem;
+                opacity: 0;
+                //transition: all 1.5s;
+
+
+            }
+
+            &.responsive {
+                opacity: 1;
+                transition: all 2s;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    opacity: 1;
+                    //transition: all 1.5s;
+                }
+            }
+        }
+
+        button {
+            @include transparentButton();
+        }
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 11;
+        height: 50px;
+        background-color: #F9F3F0;
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        .for-mobile {
+            display: inline-block;
+            margin-right: 23px;
+        }
+
+        button {
+            display: none;
+        }
+
+        ul {
+            width: auto;
+            opacity: 1;
+            display: inline-flex;
+            flex-direction: row;
+            gap: 2vh;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0;
+
+            li {
+                display: flex !important;
+                padding: 0.5rem 2vh;
+                justify-content: center;
+
+                &:has(> a.active) {
+                    font-weight: bolder;
+                    border-bottom: 1px solid $dark-text;
+
+                }
+            }
+
+        }
+    }
+}
+
+.navigation-link {
+    color: $dark-text ;
+    text-decoration: none;
+}
+.navigation-link:visited {
+    color: $dark-text ;
+    text-decoration: none;
+}

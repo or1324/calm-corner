@@ -40,14 +40,12 @@ export async function addStory(wirter, storyText) {
 
 
 //get back all the stories from the firestore
-export function readStories() {
+export async function readStories() {
     var allStoriesList = [];
-    getDocs(query(collection(db, "stories"))).then((snapshot) => {
-        snapshot.forEach((doc) => {
-            allStoriesList.push(doc.data())
-        });
-    }).catch((error) => {
-        console.error("Error reading stories:", error);
+    const q = query(collection(db, "stories"));
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+        allStoriesList.push(doc.data())
     });
     return allStoriesList;
 }
@@ -74,17 +72,14 @@ export async function addReport(wirter, reportContent, cityName) {
 }
 
 //get back all the reports from the firestore
-export function readReports() {
+export async function readReports() {
     var allReportsList = [];
-    getDocs(collection(db, "reports")).then((snapshot) => {
-        snapshot.forEach((doc) => {
-            allReportsList.push(doc.data())
-        });
-    }).catch((error) => {
-        console.error("Error reading reports:", error);
+    const q = query(collection(db, "reports"));
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+        allReportsList.push(doc.data())
     });
     
     return allReportsList;
 }
 //-----------------------------------------------------------------
-

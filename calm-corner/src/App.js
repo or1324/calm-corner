@@ -36,6 +36,7 @@ function App() {
           <Route path="/עזרה-ראשונה" element={<div></div>} />
         </Routes>
       </BrowserRouter>
+      
       <Footer></Footer>
     </div>
     

@@ -1,6 +1,9 @@
 import React from "react";
 import "../assets/styles/HomeNavigation.css"
 import NavigationCard from "./NavigationCard";
+
+import { Link } from 'react-router-dom';
+
 import firstAidIcon from "../assets/images/first-aid-icon.png"
 import methodsIcon from "../assets/images/methods-icon.png"
 import signalIcon from "../assets/images/signal-icon.png"
@@ -9,12 +12,30 @@ import supportIcon from "../assets/images/support-icon.png"
 
 
 function HomeNavigation(props) {
+    
     return (<div className="navigation-container">
-        <NavigationCard image={firstAidIcon} title={"עזרה ראשונה"}></NavigationCard>
-        <NavigationCard image={signalIcon} title={"דיווחים מהשטח"}></NavigationCard>
-        <NavigationCard image={storiesIcon} title={"סיפורים אישיים"}></NavigationCard>
-        <NavigationCard image={methodsIcon} title={"שיטות הרגעה"}></NavigationCard>
+      
+
+      
+       
+      <Link to={'/מוקדי-תמיכה'} style={{ textDecoration: 'none' }}>
         <NavigationCard image={supportIcon} title={"מוקדי תמיכה"}></NavigationCard>
+        </Link>
+
+        <Link to={'/שיטות-הרגעה'} style={{ textDecoration: 'none' }}>
+        <NavigationCard image={methodsIcon} title={"שיטות הרגעה"}></NavigationCard>
+        </Link>
+
+        <Link to={'/סיפורים-אישיים'} style={{ textDecoration: 'none' }}>
+        <NavigationCard image={storiesIcon} title={"סיפורים אישיים"}></NavigationCard>
+        </Link>
+
+        <Link to={'/דיווחים-מהשטח'} style={{ textDecoration: 'none' }}>
+        <NavigationCard image={signalIcon} title={"דיווחים מהשטח"}></NavigationCard>
+        </Link>
+        <Link to={'/עזרה-ראשונה'} style={{ textDecoration: 'none' }}>
+        <NavigationCard image={firstAidIcon} title={"עזרה ראשונה"} ></NavigationCard>
+        </Link>
         </div>
     );
 

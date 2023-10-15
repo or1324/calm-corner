@@ -3,10 +3,10 @@ import "../assets/styles/Section.css";
 function Section(props) {
   return (
     <div>
-      {props.children}
       <div class="section_header">
         <h2>כותרת</h2>
       </div>
+<<<<<<< Updated upstream
       <div class="section_content">
         <p>
           לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב היושבב שערש
@@ -14,6 +14,9 @@ function Section(props) {
           אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
         </p>
       </div>
+=======
+      <div class="section_content">{props.children}</div>
+>>>>>>> Stashed changes
     </div>
   );
 }

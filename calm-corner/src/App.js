@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./react-components/HomePage";
 import ReportPage from "./react-components/ReportPage";
 import Section from "./react-components/Section";
+import FirstAidPage from "./react-components/FirstAidPage";
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
           <Route path="/שיטות-הרגעה" element={<div></div>} />
           <Route path="/סיפורים-אישיים" element={<div></div>} />
           <Route path="/דיווחים-מהשטח" element={<ReportPage />} />
-          <Route path="/עזרה-ראשונה" element={<div></div>} />
+          <Route path="/עזרה-ראשונה" element={<FirstAidPage/>} />
         </Routes>
       </BrowserRouter>
     </div>

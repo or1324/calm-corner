@@ -2,13 +2,16 @@ import "./assets/styles/App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./react-components/HomePage";
 import ReportPage from "./react-components/ReportPage";
-import Section from "./react-components/Section";import HomeNavigation from './components/HomeNavigation';
+import Section from "./react-components/Section";
+import HomeNavigation from './react-components/HomeNavigation';
+import logo from "./assets/icons/logo.png";
+import Footer from "./react-components/Footer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,10 +22,10 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-        <HomeNavigation></HomeNavigation>
+        </a> */}
+       
       </header>
-      <Footer></Footer>
+     
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -33,7 +36,9 @@ function App() {
           <Route path="/עזרה-ראשונה" element={<div></div>} />
         </Routes>
       </BrowserRouter>
+      <Footer></Footer>
     </div>
+    
   );
 }
 export default App;

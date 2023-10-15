@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './assets/styles/App.css';
 import Footer from './components/Footer';
+import HomeNavigation from './components/HomeNavigation';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <HomeNavigation></HomeNavigation>
       </header>
       <Footer></Footer>
     </div>

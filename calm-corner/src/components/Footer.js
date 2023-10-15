@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/styles/Footer.css"
 
 
-function Footer(props) {
+function Footer() {
     return (
         <div className="footer-container">
             <div className="footer-upper-text">

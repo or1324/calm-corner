@@ -1,3 +1,4 @@
+@import "index.css";
 .resilience_button_container {
   width: 380px;
   height: 61px;
@@ -9,13 +10,7 @@
   align-items: center;
   border-radius: 14px;
   border-width: 0.5px;
-}
-
-.resilience_city_container {
-  width: 380px;
-  height: 21px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
+  color: #314580;
+  font-family: "Bold";
+  font-size: 26px;
 }

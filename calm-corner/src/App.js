@@ -4,9 +4,17 @@ import HomePage from "./react-components/HomePage";
 import ReportPage from "./react-components/ReportPage";
 import Section from "./react-components/Section";
 import FirstAidPage from "./react-components/FirstAidPage";
+import HomeNavigation from './react-components/HomeNavigation';
+import logo from "./assets/icons/logo.png";
+import Footer from "./react-components/Footer";
+
 function App() {
   return (
     <div className="App">
+      {/* <header className="App-header">
+       
+      </header> */}
+     
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -17,7 +25,10 @@ function App() {
           <Route path="/עזרה-ראשונה" element={<FirstAidPage/>} />
         </Routes>
       </BrowserRouter>
+      
+      <Footer></Footer>
     </div>
+    
   );
 }
 export default App;

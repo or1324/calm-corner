@@ -1,0 +1,6 @@
+.navigation-container {
+    display: flex;        /* Make it a flex container */
+    justify-content: space-between; /* Distribute items with space between them */
+    align-items: center;  /* Align items vertically in the center */
+  }
+  

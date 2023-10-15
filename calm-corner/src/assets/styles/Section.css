@@ -1,0 +1,15 @@
+@import "index.css";
+.section_header {
+  max-width: 1248px;
+  font-family: "Bold";
+  background-color: #f9f3f0;
+  position: relative;
+  text-align: right;
+}
+
+.section_content {
+  font-family: "Regular";
+  background-color: #f9f3f0;
+  position: relative;
+  text-align: right;
+}

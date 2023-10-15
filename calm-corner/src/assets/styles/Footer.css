@@ -1,47 +1,49 @@
 /* Footer.css */
 .footer-container {
-    background: linear-gradient(to left, #2B7ABB, #194DDD, #573AA6);
-    color: white;
-    width: 100%;
-    height: 75px;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .footer-upper-text {
+  background: linear-gradient(to left, #2b7abb, #194ddd, #573aa6);
+  color: white;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-    font-family: 'Regular';
-    font-weight: normal;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    margin-top: 1%;
- 
-  }
-  
-  .footer-upper-text p {
-    margin-right: 20px;
-  }
+.footer-upper-text {
+  font-family: "Regular";
+  font-weight: normal;
+  display: flex;
+  background: none;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 1%;
+}
 
-  .footer-link {
-    color: white
-  }
+.footer-upper-text p {
+  margin-right: 20px;
+  background: none;
+}
 
-  .footer-link:visited{
-    color:white;
-  }
-  
-  .footer-lower-text {
-    line-height: 0;
-    margin-bottom: 0.8%;
-    height: fit-content;
-    font-size: 0.9rem;
-    font-family: 'Thin';
-    font-weight: normal;
-  }
-  
+.footer-link {
+  color: white;
+  background: none;
+}
+
+.footer-link:visited {
+  color: white;
+  background: none;
+}
+
+.footer-lower-text {
+  line-height: 0;
+  margin-bottom: 0.8%;
+  height: fit-content;
+  font-size: 0.9rem;
+  font-family: "Thin";
+  background: none;
+  font-weight: normal;
+}

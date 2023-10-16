@@ -17,3 +17,9 @@
 #content {
   margin: 23px;
 }
+@media only screen and (max-width: 650px) {
+#title, #explaination {
+    display: block;
+    text-align: center;
+}
+}

@@ -1,0 +1,50 @@
+.navigation-card {
+    background-color: #F9F3F0;
+    font-family: 'Bold';
+    font-weight: normal;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    height: 160px;
+    width: 240px;
+    min-width: 100px;
+    min-width: 150px;
+    max-width: 480px;
+    max-height: 320px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #416DF3;
+    border-radius: 0.3rem;
+}
+
+.navigation-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    
+}
+.navigation-card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.navigation-card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  
+
+    width: 80%;
+    height: 40%;
+    font-size: 1.5rem;
+    font-family: 'Bold';
+    font-weight: normal;
+    color: black;
+
+}

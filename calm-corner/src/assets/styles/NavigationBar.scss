@@ -1,5 +1,6 @@
-$dark-text:#0B0F1C;
-@mixin transparentButton(){
+$dark-text: #0B0F1C;
+
+@mixin transparentButton() {
     background: none;
     color: inherit;
     border: none;
@@ -8,13 +9,18 @@ $dark-text:#0B0F1C;
     cursor: pointer;
     outline: inherit;
 }
+//mobile
 @media only screen and (max-width: 650px) {
     nav {
+        width: 100%;
+
         .for-mobile {
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
-            margin-right: 23px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1rem 0;
+
         }
 
         height: min-content;
@@ -22,8 +28,7 @@ $dark-text:#0B0F1C;
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #F9F3F0;
-        
+
         ul {
             list-style: none;
             height: 100vh;
@@ -36,19 +41,20 @@ $dark-text:#0B0F1C;
                 width: 100%;
                 display: block;
                 border-bottom: 1px solid $dark-text;
-                padding: 1rem;
+                padding: 1rem 0;
                 opacity: 0;
                 //transition: all 1.5s;
 
 
             }
-
+            //menu open
             &.responsive {
                 opacity: 1;
-                transition: all 2s;
-                width: 100vw;
+                // transition: all 2s;
+                width: auto;
                 display: flex;
                 flex-direction: column;
+                background-color: #F9F3F0;
 
                 li {
                     opacity: 1;
@@ -63,11 +69,13 @@ $dark-text:#0B0F1C;
     }
 }
 
+//desktop
 @media only screen and (min-width: 650px) {
     nav {
+        box-sizing: border-box;
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 100vw;
         align-items: center;
         justify-content: space-between;
         z-index: 11;
@@ -77,10 +85,10 @@ $dark-text:#0B0F1C;
         position: fixed;
         top: 0;
         left: 0;
+        padding: 0 2vw;
 
         .for-mobile {
             display: inline-block;
-            margin-right: 23px;
         }
 
         button {
@@ -100,7 +108,8 @@ $dark-text:#0B0F1C;
             li {
                 display: flex !important;
                 padding: 0.5rem 2vh;
-                justify-content: center;
+                // justify-content: center;
+                text-align: center;
 
                 &:has(> a.active) {
                     font-weight: bolder;
@@ -117,6 +126,7 @@ $dark-text:#0B0F1C;
     color: $dark-text ;
     text-decoration: none;
 }
+
 .navigation-link:visited {
     color: $dark-text ;
     text-decoration: none;

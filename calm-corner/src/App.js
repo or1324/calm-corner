@@ -4,6 +4,9 @@ import HomePage from "./react-components/HomePage";
 import ReportPage from "./react-components/ReportPage";
 import SupportPage from "./react-components/SupportPage";
 import FirstAidPage from "./react-components/FirstAidPage";
+import Footer from "./react-components/Footer";
+import CalmingPage from "./react-components/CalmingPage";
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/מוקדי-תמיכה" element={<SupportPage />} />
-          <Route path="/שיטות-הרגעה" element={<div></div>} />
+          <Route path="/שיטות-הרגעה" element={<CalmingPage/>} />
           <Route path="/סיפורים-אישיים" element={<div></div>} />
           <Route path="/דיווחים-מהשטח" element={<ReportPage />} />
           <Route path="/עזרה-ראשונה" element={<FirstAidPage/>} />

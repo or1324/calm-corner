@@ -1,0 +1,23 @@
+/*item that is card shaped with only text inside with black border*/
+.calming-item { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+  height: 5vw;
+  font-size: 1.2rem;
+  font-family: "Regular";
+  font-weight: normal;
+  color: black;     
+  border: solid #000;
+  border-width: 1px;
+  border-radius: 12px;
+    
+}
+
+
+.claming-text-item {
+    margin: 15px;
+}

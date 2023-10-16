@@ -1,20 +1,21 @@
+@import "index.css";
 #title {
-    background: -webkit-linear-gradient(right, #2B7ABB, #194DDD, #573AA6);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family:Extra-Bold;
-    font-size: 30px;
-    font-weight: bolder;
+  background: -webkit-linear-gradient(right, #2b7abb, #194ddd, #573aa6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "ExtraBold";
 }
 #explaination {
-    font-size: 15px;
+  font-size: 15px;
 }
 #mainContent {
-    display: flex;
+  display: flex;
 }
 #content {
-    margin: 23px;
+  margin: 23px;
 }
 @media only screen and (max-width: 650px) {
 #title, #explaination {

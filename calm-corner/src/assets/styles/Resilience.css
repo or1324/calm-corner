@@ -1,0 +1,23 @@
+.resilience_container {
+  width: 1313px;
+  height: 501px;
+}
+
+.resilience_text {
+  margin: 23px;
+}
+
+.resilience_cities_container {
+  width: 1313px;
+  height: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Center items along the cross axis */
+}
+
+.resilience_city_row {
+  width: 100%; /* Set the width to 100% to make sure it takes the full width of its container */
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly within the row */
+  align-items: center;
+}

@@ -1,0 +1,27 @@
+.support_button_container {
+  width: 380px;
+  height: 215px;
+  background-color: white;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15); /* Figma-like drop shadow */
+  border: 2px solid blue; /* Blue border (you can change the color) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  border-width: 0.5px;
+}
+
+.support_image_container {
+  width: 233px;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.support_image_container img {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: white;
+}

@@ -43,3 +43,28 @@
     justify-content: center;
     text-align: center;
 }
+//mobile
+@media only screen and (max-width: 650px) {
+    .homepage-quete {
+        min-height: 25vh;
+       overflow: hidden;
+    
+        figure {
+            width: 80%;
+            q {
+                font-size: 1.2rem;
+            }
+    
+            figcaption {
+                font-size: 1rem;
+            }
+        }
+    
+        svg {
+            transform: scale(1.7) translateX(20vw);
+        }
+    }
+    .description {
+        margin: 2rem;
+    }
+}

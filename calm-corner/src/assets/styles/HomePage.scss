@@ -1,0 +1,45 @@
+.homepage-logo {
+    display: flex;
+    justify-content: center;
+    height:1.7rem;
+    svg{
+        height: 100%;
+    }
+}
+
+.homepage-quete {
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    font-family: Bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    figure {
+        position: absolute;
+        top: 30%;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        q {
+            font-size: 1.7rem;
+        }
+        figcaption{
+            margin-top: 1.8rem;
+            font-size: 1.5rem;
+            
+        }
+    }
+    svg {
+        width: 100%;
+    }
+}
+.description{
+    margin:2rem auto;
+display: flex;
+justify-content: center;
+text-align: center;
+
+
+}

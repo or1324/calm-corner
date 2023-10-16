@@ -4,6 +4,7 @@ import HomePage from "./react-components/HomePage";
 import ReportPage from "./react-components/ReportPage";
 import SupportPage from "./react-components/SupportPage";
 import FirstAidPage from "./react-components/FirstAidPage";
+import Footer from "./react-components/Footer"
 function App() {
   return (
     <div className="App">

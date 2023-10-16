@@ -1,0 +1,13 @@
+.navigation-container {
+    display: flex;        /* Make it a flex container */
+    justify-content: space-between; /* Distribute items with space between them */
+    align-items: stretch;  /* Align items vertically in the center */
+margin: 2rem 0;
+
+    a{
+      width: calc(90%/5);
+      // height: 100%;
+      align-self: stretch;
+    }
+  }
+  

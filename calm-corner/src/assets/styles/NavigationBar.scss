@@ -20,7 +20,8 @@ $dark-text: #0B0F1C;
             align-items: center;
             justify-content: space-between;
             padding: 1rem 1rem 0;
-
+            background-color: #F9F3F0;
+            z-index: 100;
         }
 
         height: min-content;
@@ -28,37 +29,39 @@ $dark-text: #0B0F1C;
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 100;
 
         ul {
+            margin-top: 0;
             list-style: none;
             height: 100vh;
             width: 0;
-            //transition: all 2s;
             text-wrap: nowrap;
             padding-inline: 5vh;
+            background-color: #F9F3F0;
+            z-index: 100;
+            visibility: hidden;
 
             li {
                 width: 100%;
                 display: block;
                 border-bottom: 1px solid $dark-text;
                 padding: 1rem 0;
-                opacity: 0;
-                //transition: all 1.5s;
-
-
+                visibility: hidden;
             }
             //menu open
             &.responsive {
-                opacity: 1;
-                // transition: all 2s;
                 width: auto;
                 display: flex;
                 flex-direction: column;
                 background-color: #F9F3F0;
+                z-index: 100;
+                visibility: visible;
 
                 li {
-                    opacity: 1;
-                    //transition: all 1.5s;
+                    visibility: visible;
+                    background-color: #F9F3F0;
+                    z-index: 100;
                 }
             }
         }
@@ -78,7 +81,6 @@ $dark-text: #0B0F1C;
         width: 100vw;
         align-items: center;
         justify-content: space-between;
-        z-index: 11;
         height: 50px;
         background-color: #F9F3F0;
         z-index: 100;

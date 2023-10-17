@@ -11,9 +11,6 @@ import StoryPage from "./react-components/StoryPage";
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-       
-      </header> */}
      
       <BrowserRouter>
         <Routes>

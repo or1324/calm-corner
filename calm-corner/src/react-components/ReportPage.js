@@ -5,7 +5,7 @@ import ReportForm from "./ReportForm";
 import ItemsContainer from "./ItemsContainer";
 import { readReports } from "../utils/firebaseUtils";
 import ReportItem from "./ReportItem";
-import SideBySideContainer from "./SideBySideContainer";
+import FormAndItemsContainer from "./FormAndItemsContainer";
 function ReportPage() {
     var [componentsList, setComponentsList] = useState([]);
     useEffect(()=> {
@@ -25,10 +25,10 @@ function ReportPage() {
     }, []);
         return  (<NavPage title="דיווחים מהשטח" explaination="בדף הזה אתם יכולים לדווח על אירועים שקורים אצלכם באיזור על מנת לעזור לאנשים בסביבתכם לדעת מה הולך באיזור שלכם.
         נוסף על כך, באפשרותכם לראות בעצמכם את הדיווחים של שאר האנשים.">
-            <SideBySideContainer>
+            <FormAndItemsContainer>
                 <ReportForm />
                 <ItemsContainer reportsList={componentsList}/>
-            </SideBySideContainer>
+            </FormAndItemsContainer>
         </NavPage>);
 }
 

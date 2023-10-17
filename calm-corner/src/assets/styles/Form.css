@@ -1,8 +1,19 @@
 /*form css file*/
 @import "index.css";
-.form-container {
-  background-color: none;
-  display: inline-block;
+/* mobile */
+@media only screen and (max-width: 900px) {
+  .form-container {
+    background-color: none;
+    display: block;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 900px) {
+  .form-container {
+    background-color: none;
+    display: inline-block;
+  }
 }
 .submit-botton {
   color: hsl(0, 0%, 100%);

@@ -1,7 +1,17 @@
-.main_support_buttons_container {
-  width: 1313px;
-  height: 215px;
-  display: flex;
-  justify-content: space-between; /* Spread items evenly along the main axis */
-  align-items: center; /* Center items along the cross axis */
+/* mobile */
+@media only screen and (max-width: 900px) {
+  .main_support_buttons_container {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 900px) {
+  .main_support_buttons_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Spread items evenly along the main axis */
+    align-items: center; /* Center items along the cross axis */
+  }
 }

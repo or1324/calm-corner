@@ -5,7 +5,7 @@ import StoryForm from "./StoryForm";
 import ItemsContainer from "./ItemsContainer";
 import { readStories } from "../utils/firebaseUtils";
 import StoryItem from "./StoryItem";
-import SideBySideContainer from "./SideBySideContainer";
+import FormAndItemsContainer from "./FormAndItemsContainer";
 function ReportPage() {
     var [componentsList, setComponentsList] = useState([]);
     useEffect(()=> {
@@ -22,10 +22,10 @@ function ReportPage() {
         });
     }, []);
         return  (<NavPage title="סיפורים אישיים" explaination="בדף הזה אתם מוזמנים לשתף סיפורים חיוביים על דרכי ההתמודדות שלכם עם המצב, ולקרוא סיפורים של אחרים.">
-            <SideBySideContainer>
+            <FormAndItemsContainer>
                 <StoryForm />
                 <ItemsContainer reportsList={componentsList}/>
-            </SideBySideContainer>
+            </FormAndItemsContainer>
         </NavPage>);
 }
 

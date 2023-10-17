@@ -1,12 +1,11 @@
 import React from "react";
 import "../assets/styles/CalmingContainer.css";
 import CalmingItem from "./CalmingItem";
-import arrowIcon from "../assets/images/arrow-icon.png";
+import arrowIconDesktop from "../assets/images/arrow-icon-desktop.png";
+import arrowIconMobile from "../assets/images/arrow-icon-mobile.png";
 
 
-
-
-function CalmingContainer(props) {
+function CalmingContainer() {
   
 
     const calmingItems = [
@@ -19,13 +18,13 @@ function CalmingContainer(props) {
 
   return (
     <div className="calming-container">
-     
      {calmingItems.map((item, index) => (
         <div className="step-container" key={index}>
           <CalmingItem text={item} />
           {index < calmingItems.length - 1 && (
             <div className="arrow-icon">
-              <img src={arrowIcon} alt={`Arrow ${index}`} />
+              <img src={arrowIconDesktop} className="desktopArrow" alt={`Arrow ${index}`} />
+              <img src={arrowIconMobile} className="mobileArrow" alt={`Arrow ${index}`} />
             </div>
           )}
         </div>

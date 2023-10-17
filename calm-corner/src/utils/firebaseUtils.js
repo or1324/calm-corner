@@ -68,7 +68,7 @@ function createReport(wirter, reportContent, cityName) {
 }
 //add report
 export async function addReport(writer, reportContent, cityName) {
-    if (writer === "" || reportContent === "" || cityName == "")
+    if (writer === "" || reportContent === "" || cityName === "")
         alert("צריך להכניס שם, עיר וטקסט");
     else {
         const reporObject = createReport(writer, reportContent,cityName);

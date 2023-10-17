@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/HomeNavigation.css"
+import "../assets/styles/HomeNavigation.scss"
 import NavigationCard from "./NavigationCard";
 
 import { Link } from 'react-router-dom';

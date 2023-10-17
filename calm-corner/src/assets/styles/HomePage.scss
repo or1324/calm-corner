@@ -1,0 +1,70 @@
+.homepage-logo {
+    display: flex;
+    justify-content: center;
+    height: 1.7rem;
+
+    svg {
+        height: 100%;
+    }
+}
+
+.homepage-quete {
+    height: fit-content;
+    font-family: Bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    figure {
+        position: absolute;
+        top: 30%;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+
+        q {
+            font-size: 1.7rem;
+        }
+
+        figcaption {
+            margin-top: 1.8rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    svg {
+        width: 100%;
+    }
+}
+
+.description {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+//mobile
+@media only screen and (max-width: 650px) {
+    .homepage-quete {
+        min-height: 25vh;
+       overflow: hidden;
+    
+        figure {
+            width: 80%;
+            q {
+                font-size: 1.2rem;
+            }
+    
+            figcaption {
+                font-size: 1rem;
+            }
+        }
+    
+        svg {
+            transform: scale(1.7) translateX(20vw);
+        }
+    }
+    .description {
+        margin: 2rem;
+    }
+}

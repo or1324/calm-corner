@@ -1,0 +1,40 @@
+.navigation-container {
+  display: flex;
+  /* Make it a flex container */
+  justify-content: space-between;
+  /* Distribute items with space between them */
+  align-items: stretch;
+  /* Align items vertically in the center */
+  margin: 2rem 0;
+
+  a {
+    width: calc(90%/5);
+    // height: 100%;
+    align-self: stretch;
+    padding: 0.5rem 0;
+
+  }
+}
+
+//mobile
+@media only screen and (max-width: 650px) {
+  .navigation-container {
+    display: flex;
+    /* Make it a flex container */
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Distribute items with space between them */
+    // align-items: stretch;
+    /* Align items vertically in the center */
+    margin: 2rem 0;
+    row-gap: 1rem;
+  
+    a {
+      width: calc(90%/2);
+      // height: 100%;
+      align-self: stretch;
+      box-sizing: border-box;
+    }
+  }
+}

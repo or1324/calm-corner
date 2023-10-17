@@ -1,0 +1,11 @@
+#body {
+  padding-bottom: 75px;
+  padding-top: 50px;
+}
+@media only screen and (min-width: 650px) {
+  #body {
+    .main-container{
+      padding: 0 8%;
+    }
+  }
+}

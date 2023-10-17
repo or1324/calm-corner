@@ -1,0 +1,16 @@
+.calming-container {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon img {
+    height: 2vw;
+    width: 1.2vw;
+    margin: 2vw;
+}
+
+.step-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

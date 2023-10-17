@@ -9,12 +9,14 @@ import methodsIcon from "../assets/images/methods-icon.png"
 import signalIcon from "../assets/images/signal-icon.png"
 import storiesIcon from "../assets/images/stories-icon.png"
 import supportIcon from "../assets/images/support-icon.png"
+import Section from "./Section";
 
 
 function HomeNavigation(props) {
     
     return (<div className="navigation-container">
-      
+        
+      <Section content=""></Section>
 
       
        

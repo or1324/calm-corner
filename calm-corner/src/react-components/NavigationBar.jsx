@@ -6,7 +6,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 function NavigationBar() {
 
   function toggleNavMobile() {
-    var x = document.getElementById("navigation");
+    var x = document.getElementById("navigation-bar");
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {
@@ -14,8 +14,8 @@ function NavigationBar() {
     }
   }
   return (
-      <nav>
-        <div className='for-mobile'>
+      <nav id='navigation-bar' className='topnav'>
+        <div className='for-mobile' >
           <div className='logo'><Link to='/'><CalmCornerLogo /></Link></div>
           <button onClick={toggleNavMobile}><MenuRoundedIcon /></button>
         </div>

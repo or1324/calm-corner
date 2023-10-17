@@ -9,10 +9,16 @@ $dark-text: #0B0F1C;
     cursor: pointer;
     outline: inherit;
 }
+
 //mobile
 @media only screen and (max-width: 650px) {
     nav {
         width: 100%;
+        height: min-content;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
 
         .for-mobile {
             display: flex;
@@ -21,42 +27,45 @@ $dark-text: #0B0F1C;
             justify-content: space-between;
             padding: 1rem 1rem 0;
             background-color: #F9F3F0;
-            z-index: 100;
+            // z-index: 100;
         }
 
-        height: min-content;
-        margin: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
+
 
         ul {
             margin-top: 0;
             list-style: none;
-            height: 100vh;
+            height: 0;
             width: 0;
             text-wrap: nowrap;
             padding-inline: 5vh;
             background-color: #F9F3F0;
-            z-index: 100;
-            display: none;
+            visibility: hidden;
 
             li {
                 width: 100%;
                 display: block;
                 border-bottom: 1px solid $dark-text;
                 padding: 1rem 0;
-                display: none;
+                visibility: hidden;
+                a{
+                    display: inline-block;
+                    width: 100%;
+                }
             }
-            //menu open
-            &.responsive {
+
+        }
+
+        &.responsive {
+            z-index: 1;
+            ul {
                 width: auto;
                 display: flex;
                 flex-direction: column;
                 background-color: #F9F3F0;
-                z-index: 100;
-                display: block;
+                height: 100vh;
+                visibility: visible;
+
 
                 li {
                     display: block;
@@ -64,13 +73,18 @@ $dark-text: #0B0F1C;
                     z-index: 100;
                 }
             }
-        }
 
-        button {
-            @include transparentButton();
         }
     }
+
+    button {
+        @include transparentButton();
+    }
+
+    //menu open
+
 }
+
 
 //desktop
 @media only screen and (min-width: 650px) {

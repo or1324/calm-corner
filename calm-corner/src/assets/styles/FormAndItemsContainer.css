@@ -1,0 +1,13 @@
+/* mobile */
+@media only screen and (max-width: 900px) {
+    #form_and_items_container {
+        display: block;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 900px) {
+    #form_and_items_container {
+        display: flex;
+    }
+}

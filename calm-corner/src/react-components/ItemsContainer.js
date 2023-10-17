@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/styles/ItemsContainer.css";
 const ReportsContainer = (props) => {
   return (
-    <div className="reports_container">
+    <div className="items_container">
       {props.reportsList}
     </div>
   );

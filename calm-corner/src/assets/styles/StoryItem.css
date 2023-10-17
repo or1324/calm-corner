@@ -57,12 +57,11 @@ overflow: hidden;
 .story_item_container_read_more {
     border: 2px solid rgb(0, 0, 255);
     padding: 20px;
-    display: flex;
+    display: block;
     flex-direction: column;
     direction: rtl;
     width: fit-content;
-    width: 100%;
-
+    width: 95%;
     border-radius: 10px;
     position: relative;
 

@@ -40,14 +40,14 @@ $dark-text: #0B0F1C;
             padding-inline: 5vh;
             background-color: #F9F3F0;
             z-index: 100;
-            visibility: hidden;
+            display: none;
 
             li {
                 width: 100%;
                 display: block;
                 border-bottom: 1px solid $dark-text;
                 padding: 1rem 0;
-                visibility: hidden;
+                display: none;
             }
             //menu open
             &.responsive {
@@ -56,10 +56,10 @@ $dark-text: #0B0F1C;
                 flex-direction: column;
                 background-color: #F9F3F0;
                 z-index: 100;
-                visibility: visible;
+                display: block;
 
                 li {
-                    visibility: visible;
+                    display: block;
                     background-color: #F9F3F0;
                     z-index: 100;
                 }

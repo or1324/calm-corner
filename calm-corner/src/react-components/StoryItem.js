@@ -27,16 +27,19 @@ const StoryItem = (props) => {
       </p>
 
       <div className="story_item_footer">
-        <button
-          onClick={() => {
-            set_read_more(!read_more);
-          }}
+        <button type="button"
+          onClick={handleClick}
         >
           {read_more ? "קרא פחות >>" : "קרא עוד >>"}
         </button>
       </div>
     </div>
   );
+
+  function handleClick() {
+    set_read_more(!read_more);
+  }
+
 };
 
 export default StoryItem;

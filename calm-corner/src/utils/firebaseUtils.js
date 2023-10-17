@@ -29,12 +29,17 @@ function createStory(wirter, storyParagraph) {
 
 
 //add story
-export async function addStory(wirter, storyText) {
-    const storyObject = createStory(wirter, storyText);
-    try {
-        await addDoc(storiesCollection, storyObject);
-    } catch (error) {
-        console.error("Error adding story:", error);
+export async function addStory(writer, storyText) {
+    if (writer === "" || storyText === "")
+        alert("צריך להכניס שם וטקסט");
+    else {
+        const storyObject = createStory(writer, storyText);
+        addDoc(storiesCollection, storyObject).then(()=> {
+            alert("הסיפור הועלה בהצלחה! חכו שהמנהלים יאשרו אותו.");
+            window.location.reload();
+        }).catch((error) => {
+            alert("אירעה שגיאה. נסו שנית");
+        });
     }
 }
 
@@ -62,12 +67,17 @@ function createReport(wirter, reportContent, cityName) {
     };
 }
 //add report
-export async function addReport(wirter, reportContent, cityName) {
-    const reporObject = createReport(wirter, reportContent,cityName);
-    try {
-        await addDoc(reportsCollection, reporObject);
-    } catch (error) {
-        console.error("Error adding report:", error);
+export async function addReport(writer, reportContent, cityName) {
+    if (writer === "" || reportContent === "" || cityName == "")
+        alert("צריך להכניס שם, עיר וטקסט");
+    else {
+        const reporObject = createReport(writer, reportContent,cityName);
+        addDoc(reportsCollection, reporObject).then(() => {
+            alert("הדיווח הועלה בהצלחה! חכו שהמנהלים יאשרו אותו.");
+            window.location.reload();
+        }).catch((error) => {
+            alert("אירעה שגיאה. נסו שנית");
+        });
     }
 }
 

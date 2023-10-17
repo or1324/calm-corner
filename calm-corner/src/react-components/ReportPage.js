@@ -2,9 +2,10 @@ import React from "react";
 import {useEffect, useState} from "react";
 import NavPage from "./NavPage";
 import ReportForm from "./ReportForm";
-import ReportsContainer from "./ReportsContainer";
+import ItemsContainer from "./ItemsContainer";
 import { readReports } from "../utils/firebaseUtils";
 import ReportItem from "./ReportItem";
+import SideBySideContainer from "./SideBySideContainer";
 function ReportPage() {
     var [componentsList, setComponentsList] = useState([]);
     useEffect(()=> {
@@ -24,8 +25,10 @@ function ReportPage() {
     }, []);
         return  (<NavPage title="דיווחים מהשטח" explaination="בדף הזה אתם יכולים לדווח על אירועים שקורים אצלכם באיזור על מנת לעזור לאנשים בסביבתכם לדעת מה הולך באיזור שלכם.
         נוסף על כך, באפשרותכם לראות בעצמכם את הדיווחים של שאר האנשים.">
-            <ReportForm />
-            <ReportsContainer reportsList={componentsList}/>
+            <SideBySideContainer>
+                <ReportForm />
+                <ItemsContainer reportsList={componentsList}/>
+            </SideBySideContainer>
         </NavPage>);
 }
 

@@ -1,9 +1,8 @@
 import React from "react";
-import "../assets/styles/ReportsContainer.css";
+import "../assets/styles/ItemsContainer.css";
 const ReportsContainer = (props) => {
   return (
     <div className="reports_container">
-      {console.log(props.reportsList)}
       {props.reportsList}
     </div>
   );

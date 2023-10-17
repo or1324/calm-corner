@@ -13,17 +13,17 @@ const StoryItem = (props) => {
       <div className="story_item_header">
         <span>
           {"הסיפור של"}{" "}
-          <span className="story_item_name">{props.StoryItem_name}</span>
+          <span className="story_item_name">{props.writerName}</span>
         </span>
       </div>
-      <span>{props.StoryItem.time}</span>
+      <span>{props.timestamp}</span>
 
       <p
         className={
           read_more ? "story_item_main_read_more" : "story_item_main_read_less"
         }
       >
-        {props.StoryItem.main}
+        {props.storyText}
       </p>
 
       <div className="story_item_footer">

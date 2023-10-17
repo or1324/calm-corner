@@ -1,14 +1,8 @@
-.resilience_container {
-  width: 1313px;
-  height: 501px;
-}
-
 .resilience_text {
   margin: 23px;
 }
 
 .resilience_cities_container {
-  width: 1313px;
   height: 340px;
   display: flex;
   flex-wrap: wrap;

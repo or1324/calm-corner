@@ -6,6 +6,7 @@ import SupportPage from "./react-components/SupportPage";
 import FirstAidPage from "./react-components/FirstAidPage";
 import Footer from "./react-components/Footer";
 import CalmingPage from "./react-components/CalmingPage";
+import StoryPage from "./react-components/StoryPage";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/מוקדי-תמיכה" element={<SupportPage />} />
           <Route path="/שיטות-הרגעה" element={<CalmingPage/>} />
-          <Route path="/סיפורים-אישיים" element={<div></div>} />
+          <Route path="/סיפורים-אישיים" element={<StoryPage />} />
           <Route path="/דיווחים-מהשטח" element={<ReportPage />} />
           <Route path="/עזרה-ראשונה" element={<FirstAidPage/>} />
         </Routes>

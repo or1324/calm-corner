@@ -25,8 +25,8 @@ function SupportPage(props) {
             <MainSupportButton image={<img src={SaharLogo} alt="סהר" />} />
           </a>
         </div>
+        <Resilience />
       </NavPage>
-      <Resilience />
     </div>
   );
 }
